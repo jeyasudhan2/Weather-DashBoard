@@ -1,0 +1,286 @@
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #02012b;
+  color: white;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 4rem;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: 50px;
+  background: #02012b;
+  box-shadow: 1px 1px 1px 1px rgb(43, 4, 120);
+  position: sticky;
+ top:0;
+ z-index: 2;
+}
+nav :has(select) > select {
+  padding: 7px 10px;
+  width: 150px;
+  background: rgba(255, 255, 255, 0.205);
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  font-size: medium;
+  position: relative;
+  outline: none;
+}
+nav :has(select) > select > option {
+  background: #000;
+}
+nav :is(div > div) > span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: x-large;
+}
+.gear-icon {
+  position: absolute;
+  left: 12px;
+  top: 9px;
+}
+.unit {
+  position: relative;
+  font-size: 15px;
+}
+.icon-1 {
+  color: orange;
+  margin-right: 1rem;
+  font-size: xx-large;
+}
+.Content-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.Searching_section {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.Searching_section :is(h1) {
+  font-size: xxx-large;
+}
+.Searching_section :is(input) {
+  width: 30rem;
+  height: 40px;
+  padding: 10px 35px;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.205);
+}
+.Searching_section :is(button) {
+  width: 30%;
+  height: 40px;
+  border-radius: 6px;
+  background: #1412ad;
+  color: blanchedalmond;
+  font-size: medium;
+  border: none;
+  box-shadow: 1px 1px 5px 0px rgba(245, 245, 245, 0.453);
+  transition: background-color 0.5s ease-in-out;
+}
+.Searching_section :is(button):hover{
+ background-color: #0b096d;
+}
+.search_box {
+  display: flex;
+  margin-top: 3rem;
+}
+.icon-3 {
+  position: absolute;
+  color: #cac9d5;
+  left: 10px;
+  top: 3px;
+  transform: translateY(50%);
+}
+.search_box {
+  position: relative;
+  gap: 10px;
+}
+.Search-bar::placeholder {
+  color: #ffffff;
+  font-size: medium;
+  opacity: 0.6;
+}
+.Weather-content {
+  display: grid;
+  width: 80%;
+  height: 100%;
+  gap: 20px;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  margin-top: 3rem;
+}
+.Weather-content > div {
+  display: grid;
+  place-items: center;
+  background-color: rgba(255, 255, 255, 0.074); /* blue with 20% opacity */
+  border: 1px solid rgba(177, 177, 177, 0.8); /* solid border, more opaque */
+  border-radius: 10px;
+}
+.banner {
+  grid-column: span 2;
+  grid-row: span 3;
+  position: relative;
+  background: url(./miui-8-weather-background-minimal-rainy-wallpaper-preview.jpg);
+}
+.Weather_content {
+  grid-column-start: span 2;
+  display: grid;
+  background-color: transparent !important;
+  border: none !important;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.Weather_content > div {
+  border: 2px solid rgba(177, 177, 177, 0.8);
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  padding: 15px;
+  align-items: start;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.Weather_content :is(h1) {
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: lighter;
+  opacity: 0.7;
+}
+.Weather_content :is(span) {
+  font-size: 1.5rem;
+}
+.Hourly-forcast {
+  grid-row: span 6;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  /* border: 1px solid red; */
+}
+.Hourly-forcast-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.Hourly-forcast-box {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  /* border: 1px solid red; */
+}
+.Hourly-forcast-box > div {
+  background-color: rgba(255, 255, 255, 0.074); /* blue with 20% opacity */
+  border: 1px solid rgba(177, 177, 177, 0.8); /* solid border, more opaque */
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px;
+}
+.Hourly-forcast-container > select {
+  padding: 7px 10px 7px 7px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.205);
+
+  border-radius: 5px;
+
+  text-align: center;
+  font-size: medium;
+}
+
+.daily-forcast {
+  grid-column-start: span 2;
+  grid-row: span 2;
+  background: transparent !important;
+  border: none !important;
+}
+
+.banner-content {
+  color: #ffffff;
+  position: absolute;
+  z-index: 1;
+  gap: 200px;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+}
+.banner-content :is(h2) {
+  font-size: 5rem;
+}
+.banner-content :is(h1) {
+  font-size: 8rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+}
+
+.daily-forcast-weather-container {
+  display: grid;
+  gap: 5px;
+  width: 100%;
+  height: 80%;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 5px;
+}
+.daily-forcast-weather-container > div {
+  border: 2px solid rgba(177, 177, 177, 0.8);
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.child_div {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  align-items: end;
+  justify-content: space-between;
+}
+
+select ,option{
+  background: #000;
+  color: whitesmoke !important;
+}
+footer{
+ 
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1412ad;
+
+}

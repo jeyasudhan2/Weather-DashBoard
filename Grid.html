@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Grid.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/jpg"
+      href="C:\Users\Jeyas\OneDrive\Pictures\OneDrive\Desktop\CSSmastering\CSSGRID\wallhaven-jxg29p.png"
+    />
+    <title>WeatherApp Dashboard</title>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <div>
+          <span class="logo"
+            ><i class="fa-solid fa-star-of-life icon-1"></i>WeatherApp</span
+          >
+        </div>
+      </div>
+      <div class="unit">
+        <select>
+          <option value="unit">Units</option>
+          <option value="Persentage">Persentage</option>
+        </select>
+        <span class="gear-icon"><i class="fa-solid fa-gear"></i></span>
+      </div>
+    </nav>
+    <section class="Content-section">
+      <div class="Searching_section">
+        <div>
+          <h1>How's the sky looking today?</h1>
+        </div>
+        <form action="https://example.com/register" method="post" class="search_box">
+          <input
+            class="Search-bar"
+            type="text"
+            placeholder="Search for a place.."
+          />
+          <i class="fa-solid fa-magnifying-glass icon-3"></i>
+          <button type="submit">Search</button>
+        </form>
+      </div>
+      <section class="Weather-content">
+        <div class="banner">
+      
+          <div class="banner-content">
+            <div>
+              <h2>India</h2>
+              <p>TuesDay Aug 21 2005</p>
+            </div>
+            <h1>20º</h1>
+          </div>
+        </div>
+        <div class="Weather_content">
+          <div>
+            <h1>Feel Like</h1>
+            <span>19º</span>
+          </div>
+          <div>
+            <h1>Humanity</h1>
+            <span>46%</span>
+          </div>
+          <div>
+            <h1>Wind</h1>
+            <span>40 km/h</span>
+          </div>
+          <div>
+            <h1>Precipitation</h1>
+            <span>00 mm</span>
+          </div>
+        </div>
+        <div class="Hourly-forcast">
+          <div class="Hourly-forcast-container">
+            <h1>Hourly Forcast</h1>
+            <select>
+              <option value="SunDay">SunDay</option>
+              <option value="MonDay">MonDay</option>
+              <option value="TuesDay">TuesDay</option>
+              <option value="ThusDay">ThusDay</option>
+              <option value="wednesDay">wednesDay</option>
+              <option value="FriDay">FriDay</option>
+              <option value="SatDay">SatDay</option>
+            </select>
+          </div>
+          <div class="Hourly-forcast-box">
+            <div>
+              <span><i class="fa-solid fa-cloud"></i> 5:00</span
+              ><span>37°</span>
+            </div>
+            <div>
+              <span><i style="color: yellow;" class="fa-solid fa-cloud-sun"></i> 5:00</span
+              ><span>27°</span>
+            </div>
+            <div>
+              <span><i style="color: yellow;" class="fa-solid fa-cloud-sun-rain"></i> 5:00</span
+              ><span>16°</span>
+            </div>
+            <div>
+              <span><i  class="fa-solid fa-cloud-showers-water"></i> 5:00</span
+              ><span>20°</span>
+            </div>
+            <div>
+              <span><i class="fa-solid fa-umbrella"></i> 5:00</span
+              ><span>30°</span>
+            </div>
+            <div>
+              <span><i style="color: yellow;" class="fa-solid fa-cloud-moon-rain"></i> 5:00</span
+              ><span>40°</span>
+            </div>
+            <div>
+              <span><i style="color: rgb(123, 123, 206);" class="fa-solid fa-cloud-bolt"></i> 5:00</span
+              ><span>19°</span>
+            </div>
+            <div>
+              <span><i style="color: rgb(123, 123, 206);" class="fa-solid fa-tornado"></i> 5:00</span
+              ><span>°</span>
+            </div>
+          </div>
+        </div>
+        <div class="daily-forcast">
+          <div class="daily-forcast-weather-container">
+            <div>
+              <span>Tue</span>
+              <span><img src="rain_2930159.png" width="50" height="50" alt="weatherIcons"></span>
+              <div class="child_div"> <span>20º</span><span>40º</span></div>
+            </div>
+            <div>
+                 <span>Wed</span>
+              <span><img src="cloudy_1163661.png" width="50" height="50" alt="weatherIcons"></span>
+              <div class="child_div"> <span>20º</span><span>40º</span></div>
+            </div>
+            <div>
+                 <span>Thus</span>
+              <span><img src="rain_2930159.png" width="50" height="50" alt="weatherIcons"></span>
+              <div class="child_div"> <span>20º</span><span>40º</span></div>
+            </div>
+            <div>
+                 <span>Fri</span>
+              <span><img src="cloudy_1163661.png" width="50" height="50" alt="weatherIcons"></span>
+              <div class="child_div"> <span>20º</span><span>40º</span></div>
+            </div>
+            <div>
+                 <span>Sat</span>
+              <span><img src="rain_2930159.png" width="50" height="50" alt="weatherIcons"></span>
+              <div class="child_div"> <span>20º</span><span>40º</span></div>
+            </div>
+            <div>
+                 <span>Sun</span>
+              <span><img src="cloudy_1163661.png" width="50" height="50" alt="weatherIcons"></span>
+              <div class="child_div"> <span>20º</span><span>40º</span></div>
+            </div>
+            <div>
+                 <span>Mon</span>
+              <span><img src="rain_2930159.png" width="50" height="50" alt="weatherIcons"></span>
+              <div class="child_div"> <span>20º</span><span>40º</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <footer>2025© Weather Application Dashboard</footer>
+  </body>
+</html>
