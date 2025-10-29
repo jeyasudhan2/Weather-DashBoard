@@ -27,7 +27,7 @@ Here’s how the Weather Dashboard looks in action 👇
 ## 🛠️ Technologies Used
 
 - **HTML5**
-- **CSS3 / Tailwind / Bootstrap** *(choose the one you used)*
+- **CSS3 
 - **JavaScript (ES6)**
 - **OpenWeatherMap API**
 
