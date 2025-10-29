@@ -19,7 +19,7 @@ Built using **[technologies you used — e.g., HTML, CSS, JavaScript, OpenWeathe
 
 Here’s how the Weather Dashboard looks in action 👇
 
-![Weather Dashboard Preview](./assets/preview.png)
+![Weather Dashboard Preview](./screencapture-127-0-0-1-5500-Grid-html-2025-10-29-19_20_35.png)
 > *(Replace the above path with your actual image path — for example, `/images/demo.png`)*
 
 ---
